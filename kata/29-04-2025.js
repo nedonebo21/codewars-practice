@@ -23,3 +23,22 @@ function decode(str) {
         }
     })
 }
+
+//https://www.codewars.com/kata/5680781b6b7c2be860000036/train/javascript
+//7kyu
+function vowelIndices(word){
+    const resultArr = []
+    const arr = word.toLowerCase().split('')
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === "a"||
+            arr[i] === "e"||
+            arr[i] === "i"||
+            arr[i] === "o"||
+            arr[i] === "u"||
+            arr[i] === "y")
+        {
+            resultArr.push(i+1)
+        }
+    }
+    return resultArr;
+}
