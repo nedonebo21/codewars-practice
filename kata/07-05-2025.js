@@ -34,3 +34,11 @@ function checkExam(correctAnsw, studentAnsw) {
     }, 0)
     return result < 0 ? 0 : result;
 }
+//Refactor solution ↑:
+function checkExam(correctAnsw, studentAnsw) {
+    const result = correctAnsw.reduce((sumScore, correctAnsw, i) => {
+        return studentAnsw[i] === correctAnsw ? sumScore += 4:
+            studentAnsw[i] === '' ? sumScore += 0 : sumScore - 1
+    }, 0)
+    return result < 0 ? 0 : result;
+}
