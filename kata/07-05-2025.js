@@ -42,3 +42,14 @@ function checkExam(correctAnsw, studentAnsw) {
     }, 0)
     return result < 0 ? 0 : result;
 }
+
+
+//https://www.codewars.com/kata/5aff237c578a14752d0035ae/train/javascript
+//7kyu
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+    const agesArr = [age1,age2,age3,age4,age5,age6,age7,age8]
+
+    const multiplySum = agesArr.reduce((total, curr) => total + curr * curr, 0)
+
+    return Math.floor(Math.sqrt(multiplySum) / 2)
+}
