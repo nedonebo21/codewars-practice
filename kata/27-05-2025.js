@@ -8,3 +8,13 @@ function rowWeights(arr){
         }, [0,0])
     )
 }
+
+//https://www.codewars.com/kata/57a049e253ba33ac5e000212/train/javascript
+//7kyu
+function factorial(n){
+    if (n === 1 || n === 0) {
+        return 1
+    } else {
+        return n * factorial(n - 1)
+    }
+}
