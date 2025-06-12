@@ -15,7 +15,7 @@ const divCon = (x) => {
 
 //https://www.codewars.com/kata/583f158ea20cfcbeb400000a/train/javascript
 //7kyu
-function arithmetic(a, b, operator){
+const arithmetic = (a, b, operator) => {
     switch(operator){
         case 'add':
             return a + b
@@ -26,4 +26,18 @@ function arithmetic(a, b, operator){
         case 'divide':
             return a / b
     }
+}
+
+// https://www.codewars.com/kata/59cfc000aeb2844d16000075/train/javascript
+// 7kyu
+
+const capitalize = (s) =>{
+    const arr = s.split('')
+    const firstCapStr = arr.map((el,i) => i % 2 === 0
+        ? el.toUpperCase()
+        : el.toLowerCase()).join('')
+    const secondCapStr = arr.map((el,i) => i % 2 !== 0
+        ? el.toUpperCase()
+        : el.toLowerCase()).join('')
+    return [firstCapStr, secondCapStr]
 }
