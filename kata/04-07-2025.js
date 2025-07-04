@@ -17,3 +17,10 @@ function sortMyString(str) {
   let evenStr = str.split('').filter((el,i) => i % 2 !== 0).join('')
   return `${oddStr} ${evenStr}`
 }
+
+// https://www.codewars.com/kata/5ba38ba180824a86850000f7/train/javascript
+// 7kyu
+function solve(arr) {
+  return [...new Set(arr.reverse())].reverse();
+//   return arr.reverse().filter((el,i) => arr.indexOf(el) === i).reverse()
+}
