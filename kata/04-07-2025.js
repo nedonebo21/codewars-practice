@@ -9,3 +9,11 @@ class Ship {
     return this.draft - (this.crew * 1.5) > 20
   }
 }
+
+// https://www.codewars.com/kata/580755730b5a77650500010c/train/javascript
+// 7kyu
+function sortMyString(str) {
+  let oddStr = str.split('').filter((el,i) => i % 2 === 0).join('')
+  let evenStr = str.split('').filter((el,i) => i % 2 !== 0).join('')
+  return `${oddStr} ${evenStr}`
+}
