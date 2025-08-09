@@ -10,3 +10,16 @@ const count = (string) => {
   })
   return res
 }
+
+// https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/train/javascript
+// 7kyu
+const vertMirror = (str) => {
+  return str.split('\n').map(el => el.split('').reverse().join(''))
+      .join('\n')
+}
+const horMirror = (str) => {
+  return str.split('\n').reverse().join('\n')
+}
+const oper = (fct, s) => {
+  return fct(s)
+}
