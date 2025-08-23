@@ -6,3 +6,14 @@ const accum = (s) => (
             [...acc, curr.toUpperCase() + curr.toLowerCase().repeat(i)], [])
         .join('-')
 )
+
+// https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
+// 7kyu
+function stray(numbers) {
+  const uniqueSet = new Set(numbers)
+  for (let number of uniqueSet){
+    if (numbers.filter(num => num === number).length === 1){
+      return number
+    }
+  }
+}
