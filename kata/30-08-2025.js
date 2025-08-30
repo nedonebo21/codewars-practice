@@ -11,3 +11,8 @@ const cubeOdd = (arr) => {
     return acc
   },0)
 }
+
+//https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/train/javascript
+//8kyu
+const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+const gooseFilter = (birds) => birds.filter(el => !geese.includes(el))
